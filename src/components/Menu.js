@@ -93,15 +93,15 @@ const Menu = () => {
         }
     }
     return (
-        <div className="container">
+        <div id="main">
             <h1>Our Menu</h1>
             <p onClick={handleClick}>All</p>
-            <p onClick={handleClick}>Breakfast</p>
-            <p onClick={handleClick}>Lunch</p>
-            <p onClick={handleClick}>Shakes</p>
+            <p id="filter-btn-1" onClick={handleClick}>Breakfast</p>
+            <p id="filter-btn-2" onClick={handleClick}>Lunch</p>
+            <p id="filter-btn-3" onClick={handleClick}>Shakes</p>
 
             {
-                data.map(item => (
+                menu.map(item => (
                     item.category == 'shakes' ?
                         <div>
                             <img src={item.img} alt={item.title}></img>
