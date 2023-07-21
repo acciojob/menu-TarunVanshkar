@@ -103,19 +103,19 @@ const Menu = () => {
             {
                 menu.map(item => (
                     item.category == 'shakes' ?
-                        <div>
+                        <div data-test-id="menu-item-shakes">
                             <img src={item.img} alt={item.title}></img>
                             <h2><span>{item.title}</span> <span>{item.price}</span></h2>
                             <p>{item.desc}</p>
                         </div> :
                         item.category == 'lunch' ?
-                            <div>
+                            <div data-test-id="menu-item-lunch">
                                 <img src={item.img} alt={item.title}></img>
                                 <h2><span>{item.title}</span> <span>{item.price}</span></h2>
                                 <p>{item.desc}</p>
                             </div> :
                             item.category == 'breakfast' ?
-                                <div>
+                                <div data-test-id="menu-item-breakfast">
                                     <img src={item.img} alt={item.title}></img>
                                     <h2><span>{item.title}</span> <span>{item.price}</span></h2>
                                     <p>{item.desc}</p>
